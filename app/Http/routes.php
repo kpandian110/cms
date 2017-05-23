@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-	return View::make('home');
+	return View::make('login');
 });
 
 Route::get('/charts', function()
@@ -67,12 +67,28 @@ Route::get('/blank', function()
 	return View::make('blank');
 });
 
-Route::get('/login', function()
+Route::get('/calls', function()
 {
-	return View::make('login');
+	return View::make('call');
+});
+
+Route::get('/home', function()
+{
+	return View::make('home');
+});
+
+Route::get('/register',function()
+{
+	return View::make('register');
+});
+
+Route::get('/zasetables',function()
+{
+	return View::make('zasetable');
 });
 
 Route::get('/documentation', function()
 {
 	return View::make('documentation');
 });
+
