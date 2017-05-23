@@ -2,9 +2,14 @@
 @section ('body')
 <div class="container">
         <div class="row">
-            <div class="col-md-4 col-md-offset-4">
+            <div class="col-md-6 col-md-offset-5">
+                <img src="{{ asset("assets/img/logo.png") }}" alt="logo" class="img-responsive"> 
+                </div>
+            <div class="col-md-6 col-md-offset-3">
             <br /><br /><br />
-               @section ('login_panel_title','Please Sign In')
+                
+               @section ('login_panel_title','Enter Your Login Credentials') 
+
                @section ('login_panel_body')
                         <form role="form">
                             <fieldset>
@@ -20,12 +25,13 @@
                                     </label>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a href="{{ url ('') }}" class="btn btn-lg btn-success btn-block">Login</a>
+                                <a href="{{ url ('') }}" class="btn btn-lg btn-danger btn-block">Login</a>
                             </fieldset>
                         </form>
-                    
+                   
                 @endsection
                 @include('widgets.panel', array('as'=>'login', 'header'=>true))
+                 <div style="height:345px;"></div>
             </div>
         </div>
     </div>

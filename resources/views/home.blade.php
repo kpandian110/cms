@@ -97,15 +97,15 @@
             <!-- /.row -->
             <div class="row">
                 <div class="col-lg-8">
-                
+                <!--
                 @section ('pane2_panel_title', 'Responsive Timeline')
                 @section ('pane2_panel_body')
                     
-                    <!-- /.panel -->
+                    
                     
                         
               
-                    <ul class="timeline">
+                   <ul class="timeline">
                         <li>
                             <div class="timeline-badge"><i class="fa fa-check"></i>
                             </div>
@@ -208,14 +208,15 @@
                         </li>
                     </ul>
                         
-                        <!-- /.panel-body -->
+                       
                    
-                    <!-- /.panel -->
+                   
                 @endsection
                 @include('widgets.panel', array('header'=>true, 'as'=>'pane2'))
                 </div>
+                -->
                 <!-- /.col-lg-8 -->
-                <div class="col-lg-4">
+                <!--<div class="col-lg-4">
                     @section ('cchart11_panel_title','Line Chart')
                     @section ('cchart11_panel_body')
                     @include('widgets.charts.clinechart')
@@ -272,18 +273,17 @@
                                     <span class="pull-right text-muted small"><em>Yesterday</em>
                                     </span>
                                 </a>
-                            </div>
-                            <!-- /.list-group -->
+                            </div>-
+                            
                             <a href="#" class="btn btn-default btn-block">View All Alerts</a>
-                        
-                        <!-- /.panel-body -->
+                       
                   
                     @endsection
                     @include('widgets.panel', array('header'=>true, 'as'=>'pane1'))
                       
                     
                     <!-- /.panel -->
-                    @section ('pane3_panel_title', 'Chat')
+                    <!--@section ('pane3_panel_title', 'Chat')
                     @section ('pane3_panel_body')
                          <div class="btn-group pull-right margin-inverse-top">
                                 <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -318,9 +318,9 @@
                                     </li>
                                 </ul>
                             </div>      
-                        </div>
+                        </div>-->
                         <!-- /.panel-heading -->
-                        <div class="panel-body">
+                       <!-- <div class="panel-body">
                             <ul class="chat">
                                 <li class="left clearfix">
                                     <span class="chat-img pull-left">
@@ -384,9 +384,9 @@
                                     </div>
                                 </li>
                             </ul>
-                        </div>
+                        </div>-->
                         <!-- /.panel-body -->
-                        <div class="panel-footer">
+                        <!--<div class="panel-footer">
                             <div class="input-group">
                                 <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
                                 <span class="input-group-btn">
@@ -395,7 +395,7 @@
                                     </button>
                                 </span>
                             </div>
-                        </div>
+                        </div>-->
                         <!-- /.panel-footer -->
                     </div>
                     <!-- /.panel .chat-panel -->
